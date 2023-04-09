@@ -49,8 +49,8 @@ int _strcmp(char *str1, char *str2)
 
 /**
  *_strncmp -- compares two strings to an assigned point
- *@s1: string 1
- *@s2: string 2
+ *@str1: string 1
+ *@str2: string 2
  *@n: assigned point
  *Return: difference betwee the ASCII values of the two strings or 0
  */
