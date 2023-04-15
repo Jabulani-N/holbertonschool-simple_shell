@@ -6,6 +6,7 @@
 */
 int Mystic_Square(char **environment)
 {
+	int count;
 	int charCount;
 	char *input = NULL;
 	size_t j = 0;
@@ -36,8 +37,11 @@ int Mystic_Square(char **environment)
 		{
 			printf("Token: %s\n", token);
 /** Do something with the token here */
+			count++;
 			token = strtok(NULL, "\t\n\r ");
 		}
+		return (count);
+		
 		free(input), j = 0;
 	}
 
