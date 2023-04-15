@@ -14,6 +14,8 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
+extern char **environ;
+
 int disunifiedField (char **environment);
 int openWar(char **inputArray);
 char **stray_cat(char *lineptr);

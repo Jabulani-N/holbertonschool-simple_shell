@@ -37,7 +37,7 @@ int disunifiedField (char **environment)
 	char *input;
 	size_t j = 0;
 
-	(void) environment;
+	environ = environment;
 
 	/*input = NULL;*/
 	while (j == 0)
