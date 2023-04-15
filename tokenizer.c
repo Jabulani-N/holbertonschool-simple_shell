@@ -9,6 +9,9 @@ int Mystic_Square(char **environment)
 	int charCount;
 	char *input = NULL;
 	size_t j = 0;
+	char *token;
+
+	(void) environment;
 
 	while (j == 0)
 
@@ -27,7 +30,6 @@ int Mystic_Square(char **environment)
 			return (0);
 		}
 		/* Tokenize the user input*/
-		char *token;
 
 		token = strtok(input, "\t\n\r ");
 /* use whitespace characters as delimiter */
