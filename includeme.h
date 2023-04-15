@@ -1,4 +1,4 @@
-/*I'm the header file for this entier folder*/
+/*I'm the header file for this entire folder*/
 
 #ifndef anythingHere_H
 #define anythingHere_H
@@ -13,6 +13,8 @@
 #include <sys/stat.h>
 
 int disunifiedField (char **environment);
+int openWar(char **inputArray);
+char **stray_cat(char *lineptr);
 
 #endif
 

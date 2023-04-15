@@ -34,7 +34,7 @@ int main (int ac, char **av, char **env)
 int disunifiedField (char **environment)
 {
 	int charCount;
-	char *input;
+	char *input, **inputArray;
 	size_t j = 0;
 
 	(void) environment;
@@ -62,6 +62,10 @@ int disunifiedField (char **environment)
 		if (input != NULL)
 		{
 			printf("This is where we'll call a function with\n%s\nto try to open file\n%s\n", input, input);
+			inputArray = stray_cat(input);
+			if (inputArray == NULL)
+				printf("input string either stayed null or got turned to null by token conversion script\n");
+			openWar(inputArray);
 		}
 		free(input), j = 0;
 	}
@@ -72,3 +76,5 @@ int disunifiedField (char **environment)
 	printf("this line should never run\n");
 	return(-1);
 }
+
+

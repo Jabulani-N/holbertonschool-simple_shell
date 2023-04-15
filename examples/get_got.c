@@ -17,6 +17,15 @@ int main (void)
 	i = getline(&holder, &j, stdin);/*becuase we're starting at NULL and 0, getline will allocate for us*/
 	printf("I got %i characters from you☆\nThey are:\n%s\n", i, holder);
 
+
+	free(holder);
+	j = 0;
+
+	printf("tell me words to delimit\n");
+	i = getdelim(&holder, &j, ' ', stdin);
+	printf("I got %i characters from you☆\nThey are:\n%s\n", i, holder);
+
+
 	free(holder);
 	/*yes, you do NEED TO FREE what getline allocates*/
 	return (i);
