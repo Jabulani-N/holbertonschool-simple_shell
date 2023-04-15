@@ -37,15 +37,12 @@ int disunifiedField (char **environment)
 	char *input;
 	size_t j = 0;
 
-	(void) environment;
+	environ = environment;
 
 	/*input = NULL;*/
 	while (j == 0)
 	{
-		/*input = NULL;*/
-
 		printf("\"There's no distinction between science and magic.\" ☆ ");
-		/*prints prompt*/
 		charCount = getline(&input, &j, stdin);/*becuase starting at NULL and 0, getline will allocate for us*/
 		if (charCount == -1)
 		{
@@ -53,17 +50,18 @@ int disunifiedField (char **environment)
 			printf("getline failed\n");
 			return(-1);
 		}
-		if (strcmp(input, "exit\n") == 0)	
-		{
+		if (strcmp(input, "\n") == 0)
 			free(input);
-			return (0);
-		}
-		
-		if (input != NULL)
+		else
 		{
-			printf("This is where we'll call a function with\n%s\nto try to open file\n%s\n", input, input);
+			if (strcmp(input, "exit\n") == 0)	
+			{
+				free(input);
+				return (0);
+			}
+			cleansed_crystal_mirror(input);
 		}
-		free(input), j = 0;
+		j = 0;
 	}
 	/*
 	 * we should not be able to arrive here.
@@ -71,4 +69,27 @@ int disunifiedField (char **environment)
 	 */
 	printf("this line should never run\n");
 	return(-1);
+}
+
+/**
+ * cleansed_crystal_mirror - aids in judging input
+ * @input: input
+ * Return: nothing
+ */
+
+void cleansed_crystal_mirror(char *input)
+{
+	char **inputArray;
+
+	if (input != NULL)
+	{
+		printf("This is where we'll call a function with\n%s\nto try to open file\n%s\n", input, input);
+		inputArray = stray_cat(input);
+		if (inputArray == NULL)
+			printf("input string either stayed null or got turned to null by token conversion script\n");
+		else
+			openWar(inputArray);
+		free(inputArray);
+	}
+	free(input);
 }
