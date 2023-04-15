@@ -26,19 +26,19 @@ int openWar(char **inputArray)
 
 
 /*	inputArray++;*/
-	if (access(inputArray[0], X_OK))
+	if (!access(inputArray[0], X_OK))
 	{
 
-		printf("Before execve\n");
+		printf("yes acess.\nBefore execve\n");
 		if (execve(inputArray[0], inputArray, NULL) == -1)
 		{
-			perror("Error:");
+			perror("Error");
 		}
 		printf("After execve\n");
 
 	}
 	else
-		perror("Error: you don't have access to that file");
+		printf("no access\n"), perror("Error");
 	return (0);
 }
 
