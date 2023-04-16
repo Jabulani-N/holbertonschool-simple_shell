@@ -82,8 +82,7 @@ void cleansed_crystal_mirror(char *input)
 /*to open file\n%s\n", input, input);*/
 		inputArray = stray_cat(input);
 		if (inputArray == NULL)
-			perror("input string either stayed null or got turned
-to null by token conversion script\n");
+			perror("input string either stayed null or got turned\n");
 		else
 			openWar(inputArray);
 		free(inputArray);
