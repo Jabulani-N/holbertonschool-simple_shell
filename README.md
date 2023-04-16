@@ -12,8 +12,12 @@ This repository contains the files to simulate a basic Unix Shell with some of i
 The predominantly used calls are read, write, open, execve, exit, fork, free, malloc, getline, isatty, perror, strtok, and wait.
 
 ## Flowchart
+<p align="center">
 
-!
+  <img src="simple-shell spreadsheet.PNG" width="400\"/>
+
+<br>
+
 ## Process Description
 
 The next steps are a brief description about how the shell works:
