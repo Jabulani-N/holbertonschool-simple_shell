@@ -15,9 +15,9 @@ int openWar(char **inputArray)
 /*		forking_for_filicide(inputArray);*/
 		/* the old code in question is below, commented out*/
 		if (execve(inputArray[0], inputArray, NULL) == -1)
-		  {
-		    perror("Error");
-		  }
+		{
+			perror("Error");
+		}
 /*		printf("After execve\n");*/
 	}
 	else

@@ -55,12 +55,12 @@ man ./man_3_simple_shell
 ## Files
 
 - `includeme.h`
-- `forking_up.c` 
-- `open_argument.c` 
+- `forking_up.c`
+- `open_argument.c`
 - `shell_startup.c`
 - `string_to_string_array.c`
 - `stringthings.c`
-  
+
 ## Examples
 
 Here are shown some examples of the usage of the Shell:
