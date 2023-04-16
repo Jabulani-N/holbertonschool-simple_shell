@@ -1,4 +1,4 @@
-.TH hsh 1 "04/15/2023" "hsh(3)" "hsh - General Commands Manual"
+.TH hsh  "04/15/2023" "hsh(3)" "hsh - General Commands Manual"
 
 .SH NAME
 .B Simple_Shell - emulates the basics of a simple shell
