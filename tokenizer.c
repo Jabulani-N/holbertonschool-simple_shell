@@ -15,12 +15,12 @@ int Mystic_Square(char **environment)
 	(void) environment;
 	while (j == 0)
 	{
-		printf("\"There's no distinction between science and magic.\" ☆ ");
+		_puts("\"There's no distinction between science and magic.\" ☆ ");
 		charCount = getline(&input, &j, stdin);
 		if (charCount == -1)
 		{
 			free(input);
-			printf("getline failed\n");
+			perror("getline failed\n");
 			return (-1);
 		}
 		if (strcmp(input, "exit\n") == 0)
@@ -43,6 +43,6 @@ int Mystic_Square(char **environment)
 	}
 
 	/* This line should never run */
-	printf("This line should never run\n");
+	_puts("This line should never run\n");
 	return (-1);
 }
