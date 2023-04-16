@@ -23,8 +23,9 @@ void forking_for_filicide(char **funk)
 		if( execve(funk[0], funk, NULL))
 		{
 			perror("Error ");
-		/*	free(funk);*/
-		/*	exit(status);*/
+			free(*funk);
+			free(funk);
+			exit(status);
 		}
 	}
 	else
