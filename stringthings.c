@@ -63,5 +63,5 @@ int _strncmp(char *str1, char *str2, unsigned int n)
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);
 	}
-	return (str1[i] - str2[i]);
+	return (0);
 }

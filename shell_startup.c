@@ -51,8 +51,8 @@ int disunifiedField(char **environment)
 			free(input);
 		else
 		{
-			if (strcmp(input, "exit\n") == 0)
-			{
+			if (_strncmp(input, "exit\n", 5) == 0 || _strncmp(input, "exit ", 5) == 0)
+			{ /*do strncmp for it matching "exit " or "exit\n"*/
 				free(input);
 				return (0);
 			}
