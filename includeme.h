@@ -1,5 +1,3 @@
-/*I'm the header file for this entire folder*/
-
 #ifndef anythingHere_H
 #define anythingHere_H
 
@@ -16,7 +14,7 @@
 
 extern char **environ;
 
-int disunifiedField (char **environment);
+int disunifiedField(char **environment);
 int openWar(char **inputArray);
 char **stray_cat(char *lineptr);
 int _strlen(char *origin);
@@ -32,4 +30,3 @@ void _puts(char *str);
 #define BUFFER 1024
 
 #endif
-

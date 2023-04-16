@@ -20,7 +20,7 @@ void forking_for_filicide(char **funk)
 	}
 	else if (id == 0)
 	{
-		if( execve(funk[0], funk, NULL))
+		if (execve(funk[0], funk, NULL))
 		{
 			perror("Error ");
 			free(*funk);
@@ -32,5 +32,4 @@ void forking_for_filicide(char **funk)
 	{
 		wait(&status);
 	}
-	return;
 }
