@@ -3,7 +3,6 @@ Write a simple UNIX command interpreter
 
 [Everything you need to know to start coding your own shell
 ](https://docs.google.com/document/d/1Z-ZNLO0bd5c0-aa5HX74-2hC4_P86toWuRbNFzK6Mqw/edit#heading=h.apqih1txl2ly)
-# holbertonschool-simple_shell
 
 ## Description
 
@@ -14,7 +13,7 @@ The predominantly used calls are read, write, open, execve, exit, fork, free, ma
 ## Flowchart
 <p align="center">
 
-  <img src="simple-shell spreadsheet.PNG" width="777\"/>
+  <img src="simple-shell spreadsheet.PNG" width="400\"/>
 
 <br>
 
@@ -53,20 +52,21 @@ The next steps are a brief description about how the shell works:
 
 man ./man_3_simple_shell
 
-## Files Description
+## Files
 
 - `includeme.h`
-- `-forking_up.c` 
-- `-open_argument.c` 
-- `-shell_startup.c`
-- `-string_to_string_array.c`
-
+- `forking_up.c` 
+- `open_argument.c` 
+- `shell_startup.c`
+- `string_to_string_array.c`
+- `stringthings.c`
+  
 ## Examples
 
 Here are shown some examples of the usage of the Shell:
 - /usr/bin/ls
-- 
-- `README.md`  `examples`      `gcc_common-hardlink.md`  `hsh`          `lolololol`        `shell_startup.c`           `stringthings.c`  `vgcore.12389`  `vgcore.12420`
+
+`README.md`  `examples`      `gcc_common-hardlink.md`  `hsh`          `lolololol`        `shell_startup.c`           `stringthings.c`  `vgcore.12389`  `vgcore.12420`
 `a.out`      `forking_up.c`  `gitter`                  `includeme.h`  `open_argument.c`  `string_to_string-array.c`  `tokenizer.c`     `vgcore.12405`
 ```
 ## Authors:
