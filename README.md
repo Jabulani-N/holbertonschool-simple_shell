@@ -51,23 +51,14 @@ man ./man_3_simple_shell
 
 ## Files Description
 
-- hsh.c
+- includeme.h -forking_up.c -open_argument.c -shell_startup.c -string_to_string_array.c
 
 ## Examples
 
 Here are shown some examples of the usage of the Shell:
-
-- ls
-
-`($) ls
- AUTHORS
- README.md
-
-- /bin/ls
-
-`($) ls
- AUTHORS
- README.md  man_3_simple_shell`
+- /usr/bin/ls
+- README.md  examples      gcc_common-hardlink.md  hsh          lolololol        shell_startup.c           stringthings.c  vgcore.12389  vgcore.12420
+a.out      forking_up.c  gitter                  includeme.h  open_argument.c  string_to_string-array.c  tokenizer.c     vgcore.12405
 
 ## Authors:
 
