@@ -38,7 +38,7 @@ int disunifiedField(char **environment)
 	/*input = NULL;*/
 	while (j == 0)
 	{
-		_puts("\"There's no distinction between science and magic.\" ☆ ");
+		printf("\"There's no distinction between science and magic.\" ☆ ");
 		charCount = getline(&input, &j, stdin);
 	/*becuase starting atNULL and 0, getline will allocate for us*/
 		if (charCount == -1)
@@ -62,7 +62,7 @@ int disunifiedField(char **environment)
 	}
 	/* we should not be able to arrive here. the only way out of the abov*/
 	/*loop should be return (0) via "exit" */
-	_puts("this line should never run\n");
+	printf("this line should never run\n");
 	return (-1);
 }
 
