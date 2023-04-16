@@ -7,7 +7,7 @@ Write a simple UNIX command interpreter
 
 ## Description
 
-This repository contains the files to simulate a basic Unix Shell with some of its commands. 
+This repository contains the files to simulate a basic Unix Shell with some of its commands.
 
 The predominantly used calls are read, write, open, execve, exit, fork, free, malloc, getline, isatty, perror, strtok, and wait.
 
@@ -41,18 +41,18 @@ The next steps are a brief description about how the shell works:
 
 - Use gcc compiler, with -Wall -Werror -Wextra -pedantic -std=gnu89 flags
 
-- To run the program type: 
+- To run the program type:
 
 ./hsh
 
-- To check the Shell manual type: 
+- To check the Shell manual type:
 
 man ./man_3_simple_shell
 
 ## Files Description
 
 - hsh.c
-	
+
 ## Examples
 
 Here are shown some examples of the usage of the Shell:
@@ -60,16 +60,16 @@ Here are shown some examples of the usage of the Shell:
 - ls
 
 `($) ls
- AUTHORS    
- README.md               
+ AUTHORS
+ README.md
 
 - /bin/ls
 
 `($) ls
- AUTHORS       
+ AUTHORS
  README.md  man_3_simple_shell`
 
 ## Authors:
 
-- 
-- 
+-Jabulani Ndhlovu <6128@holbertonstudents.com>
+-Adel Knode <6126@holbertonstudents.com>
