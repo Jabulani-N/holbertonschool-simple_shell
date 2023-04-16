@@ -14,7 +14,12 @@ int openWar(char **inputArray)
 /*		printf("yes access.\nBefore execve\n");*/
 		forking_for_filicide(inputArray);
 		printf("After execve\n");
-
+		/*
+		if (execve(inputArray[0], inputArray, NULL) == -1)
+		  {
+		    perror("Error");
+		  }
+		*/
 	}
 	else
 		perror("Error");/* printf("no access\n");*/
