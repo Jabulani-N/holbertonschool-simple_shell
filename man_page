@@ -30,7 +30,7 @@ command -flags
 .SH BUILTINS
 The following builtin commands are supported:
 .B exit - exit to shell
-.B env - prints the environment variables
+.B env - prints the environment variables (WIP)
 
 EXAMPLE USAGE
 
