@@ -16,13 +16,20 @@ void forking_for_filicide(char **funk)
 	if (id == -1)
 	{
 		perror("Error");
+		return;
 	}
 	else if (id == 0)
 	{
-		execve(funk[0], funk, NULL);
+		if( execve(funk[0], funk, NULL))
+		{
+			perror("Error ");
+		/*	free(funk);*/
+		/*	exit(status);*/
+		}
 	}
 	else
 	{
 		wait(&status);
 	}
+	return;
 }
