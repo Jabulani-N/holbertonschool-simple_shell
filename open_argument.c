@@ -11,12 +11,12 @@ int openWar(char **inputArray)
 	if (!access(inputArray[0], X_OK))
 	{
 
-		printf("yes access.\nBefore execve\n");
+/*		printf("yes access.\nBefore execve\n");*/
 		forking_for_filicide(inputArray);
 		printf("After execve\n");
 
 	}
 	else
-		printf("no access\n"), perror("Error");
+		perror("Error");/* printf("no access\n");*/
 	return (0);
 }

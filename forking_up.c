@@ -21,8 +21,8 @@ void forking_for_filicide(char **funk)
 	{
 		execve(funk[0], funk, NULL);
 	}
-		else
-		{
-			wait(&status);
-		}
+	else
+	{
+		wait(&status);
+	}
 }

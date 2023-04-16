@@ -47,7 +47,7 @@ int disunifiedField (char **environment)
 		if (charCount == -1)
 		{
 			free(input);
-			printf("getline failed\n");
+			perror("getline failed\n");
 			return(-1);
 		}
 		if (strcmp(input, "\n") == 0)
@@ -83,10 +83,10 @@ void cleansed_crystal_mirror(char *input)
 
 	if (input != NULL)
 	{
-		printf("This is where we'll call a function with\n%s\nto try to open file\n%s\n", input, input);
+/*		printf("This is where we'll call a function with\n%s\nto try to open file\n%s\n", input, input);*/
 		inputArray = stray_cat(input);
 		if (inputArray == NULL)
-			printf("input string either stayed null or got turned to null by token conversion script\n");
+			perror("input string either stayed null or got turned to null by token conversion script\n");
 		else
 			openWar(inputArray);
 		free(inputArray);
