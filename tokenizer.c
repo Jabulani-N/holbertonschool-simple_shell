@@ -13,9 +13,7 @@ int Mystic_Square(char **environment)
 	char *token;
 
 	(void) environment;
-
 	while (j == 0)
-
 	{
 		printf("\"There's no distinction between science and magic.\" ☆ ");
 		charCount = getline(&input, &j, stdin);
@@ -31,7 +29,6 @@ int Mystic_Square(char **environment)
 			return (0);
 		}
 		/* Tokenize the user input*/
-
 		token = strtok(input, "\t\n\r ");
 /* use whitespace characters as delimiter */
 		while (token != NULL)
@@ -42,7 +39,6 @@ int Mystic_Square(char **environment)
 			token = strtok(NULL, "\t\n\r ");
 		}
 		return (count);
-		
 		free(input), j = 0;
 	}
 
