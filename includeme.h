@@ -25,6 +25,7 @@ int _strcmp(char *str1, char *str2);
 int _strncmp(char *str1, char *str2, unsigned int n);
 void cleansed_crystal_mirror(char *input);
 void forking_for_filicide(char **funk);
+void _puts(char *str);
 
 /*other definitions for malloc because others did it*/
 

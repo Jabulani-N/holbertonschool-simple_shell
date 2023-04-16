@@ -42,7 +42,7 @@ int disunifiedField (char **environment)
 	/*input = NULL;*/
 	while (j == 0)
 	{
-		printf("\"There's no distinction between science and magic.\" ☆ ");
+		_puts("\"There's no distinction between science and magic.\" ☆ ");
 		charCount = getline(&input, &j, stdin);/*becuase starting at NULL and 0, getline will allocate for us*/
 		if (charCount == -1)
 		{
@@ -50,11 +50,11 @@ int disunifiedField (char **environment)
 			perror("getline failed\n");
 			return(-1);
 		}
-		if (strcmp(input, "\n") == 0)
+		if (_strcmp(input, "\n") == 0)
 			free(input);
 		else
 		{
-			if (strcmp(input, "exit\n") == 0)	
+			if (_strcmp(input, "exit\n") == 0)	
 			{
 				free(input);
 				return (0);
@@ -67,7 +67,7 @@ int disunifiedField (char **environment)
 	 * we should not be able to arrive here.
 	 * 	the only way out of the above loop should be return (0) via "exit"
 	 */
-	printf("this line should never run\n");
+	_puts("this line should never run\n");
 	return(-1);
 }
 
