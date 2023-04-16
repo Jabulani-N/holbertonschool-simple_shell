@@ -30,7 +30,6 @@ int Mystic_Square(char **environment)
 			free(input);
 			return (0);
 		}
-
 		/* Tokenize the user input*/
 
 		token = strtok(input, "\t\n\r ");

@@ -14,6 +14,8 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
+extern char **environ;
+
 int disunifiedField (char **environment);
 int openWar(char **inputArray);
 char **stray_cat(char *lineptr);
@@ -22,7 +24,7 @@ char *_strcpy(char *dest, char *origin);
 int _strcmp(char *str1, char *str2);
 int _strncmp(char *str1, char *str2, unsigned int n);
 void cleansed_crystal_mirror(char *input);
-
+void forking_for_filicide(char **funk);
 
 /*other definitions for malloc because others did it*/
 
