@@ -14,7 +14,7 @@ The predominantly used calls are read, write, open, execve, exit, fork, free, ma
 ## Flowchart
 <p align="center">
 
-  <img src="simple-shell spreadsheet.PNG" width="400\"/>
+  <img src="simple-shell spreadsheet.PNG" width="777\"/>
 
 <br>
 
