@@ -57,8 +57,8 @@ man ./man_3_simple_shell
 
 Here are shown some examples of the usage of the Shell:
 - /usr/bin/ls
-- README.md  examples      gcc_common-hardlink.md  hsh          lolololol        shell_startup.c           stringthings.c  vgcore.12389  vgcore.12420
-a.out      forking_up.c  gitter                  includeme.h  open_argument.c  string_to_string-array.c  tokenizer.c     vgcore.12405
+- `README.md  `examples      gcc_common-hardlink.md  hsh          lolololol        shell_startup.c           stringthings.c  vgcore.12389  vgcore.12420
+a.out      forking_up.c  gitter                  includeme.h  open_argument.c  string_to_string-array.c  tokenizer.c     vgcore.12405`
 
 ## Authors:
 
