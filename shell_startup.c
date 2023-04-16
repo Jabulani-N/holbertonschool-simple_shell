@@ -22,7 +22,7 @@ int main(int ac, char **av, char **env)
  * disunifiedField - print prompt until exit or program summon
  * read user input, repeating until "exit" is entered
  * attempts to open file with same name as user input
- * @env: string array of environment info from main
+ * @environment: string array of environment info from main
  * Return: on successful exit
  */
 
@@ -40,8 +40,7 @@ int disunifiedField(char **environment)
 	{
 		printf("\"There's no distinction between science and magic.\" ☆ ");
 		charCount = getline(&input, &j, stdin);
-/**
- *becuase starting atNULL and 0, getline will allocate for us*/
+/** *becuase starting atNULL and 0, getline will allocate for us*/
 		if (charCount == -1)
 		{
 			free(input);
@@ -61,13 +60,10 @@ int disunifiedField(char **environment)
 		}
 		j = 0;
 	}
-	/**
-	 * we should not be able to arrive here.
-	 * 	the only way out of the above loop should be return (0)
-	 *via "exit"
-	 */
+	/* we should not be able to arrive here. the only way out of the abov*/
+	/*loop should be return (0) via "exit" */
 	printf("this line should never run\n");
-	return(-1);
+	return (-1);
 }
 
 /**
@@ -82,12 +78,12 @@ void cleansed_crystal_mirror(char *input)
 
 	if (input != NULL)
 	{
-/*		printf("This is where we'll call a function with\n%s\nto try
-		to open file\n%s\n", input, input);*/
+/*printf("This is where we'll call a function with\n%s\nto try*/
+/*to open file\n%s\n", input, input);*/
 		inputArray = stray_cat(input);
 		if (inputArray == NULL)
 			perror("input string either stayed null or got turned
- to null by token conversion script\n");
+to null by token conversion script\n");
 		else
 			openWar(inputArray);
 		free(inputArray);
