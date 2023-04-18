@@ -56,7 +56,10 @@ int disunifiedField(char **environment)
 				free(input);
 				return (0);
 			}
-			cleansed_crystal_mirror(input);
+			if (cleansed_crystal_mirror(input) == 100)
+			{ /*you have a child at 100 days*/
+				return (0);
+			}
 		}
 		j = 0;
 	}
@@ -72,7 +75,7 @@ int disunifiedField(char **environment)
  * Return: nothing
  */
 
-void cleansed_crystal_mirror(char *input)
+int cleansed_crystal_mirror(char *input)
 {
 	char **inputArray;
 
@@ -84,8 +87,14 @@ void cleansed_crystal_mirror(char *input)
 		if (inputArray == NULL)
 			perror("input string either stayed null or got turned\n");
 		else
-			openWar(inputArray);
+			if (openWar(inputArray) == 100)
+			{ /*open war returns 100 if it is a child*/
+				free(inputArray);
+				free(input);
+				return (100);
+			}
 		free(inputArray);
 	}
 	free(input);
+	return(0);
 }

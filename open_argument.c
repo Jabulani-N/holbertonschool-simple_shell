@@ -16,7 +16,7 @@ int openWar(char **inputArray)
 {
 	int adultsOnly;
 /*	inputArray++;*/
-	if (!access(inputArray[0], X_OK),)
+	if (!access(inputArray[0], X_OK))
 	{
 
 /*		printf("yes access.\nBefore execve\n");*/
@@ -24,12 +24,13 @@ int openWar(char **inputArray)
 		/* the old code in question is below, commented out*/
 		adultsOnly = fork();
 		if (adultsOnly == 0)
-		{
+		{ /*if this is child*/
 			if (execve(inputArray[0], inputArray, NULL) == -1)
 			{
 				perror("Error");
 			}
 /*			printf("After execve\n");*/
+			return (100);/*all children that live this long return 100*/
 		}
 		else
 		{

@@ -21,7 +21,7 @@ int _strlen(char *origin);
 char *_strcpy(char *dest, char *origin);
 int _strcmp(char *str1, char *str2);
 int _strncmp(char *str1, char *str2, unsigned int n);
-void cleansed_crystal_mirror(char *input);
+int cleansed_crystal_mirror(char *input);
 void forking_for_filicide(char **funk);
 void _puts(char *str);
 
