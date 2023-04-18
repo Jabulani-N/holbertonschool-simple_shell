@@ -8,15 +8,19 @@
 
 /*
  *		known bugs
+ *
  * it forks even if it is not able to run, like a directory
  * 	Try making a child's return value from this function cause the caller to just straight exit everything
  * 		can do this via continue
+ * 			attempted via return. caused it to fail all checks besides presence
+ *
+ *		consider more checks via access instead
  */
 int openWar(char **inputArray)
 {
 	int adultsOnly;
 /*	inputArray++;*/
-	if (!access(inputArray[0], X_OK))
+	if (!access(inputArray[0], X_OK) && !access(inputArray[0], R_OK))
 	{
 
 /*		printf("yes access.\nBefore execve\n");*/
